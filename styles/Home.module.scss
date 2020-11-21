@@ -1,0 +1,123 @@
+$base-color: #120000;
+$theme-color: #7ea1b3;
+
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/photos/bg.JPG");
+    background-position: bottom;
+
+    .main {
+        max-width: 335px;
+        padding: 5rem 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: $base-color;
+
+        & > * {
+            text-align: center;
+            width: 100%;
+        }
+
+        .title {
+            margin: 0;
+            font-size: 4rem;
+            font-family: "Roboto Slab", serif;
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 172.4%;
+        }
+        .description {
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 111.9%;
+            margin-block-start: 0;
+        }
+        .to_rules {
+            margin-block-end: 1em;
+            text-align: left;
+            font-size: 18px;
+
+            .to_rules_icon {
+                margin: 0 30px;
+                background: #7ea1b3;
+                border-radius: 13px;
+                border: none;
+                height: 30px;
+                width: 30px;
+                font-family: "Roboto Slab", serif;
+                font-size: 18px;
+            }
+        }
+        .main_buttons {
+            display: flex;
+            justify-content: space-between;
+            align-content: stretch;
+
+            button {
+                background: #7ea1b3;
+                border-radius: 13px;
+                border: none;
+                height: 60px;
+                // margin: 0 8px;
+            }
+            .timer_button {
+                position: relative;
+                width: calc(40% - 16px);
+                .timer_icon {
+                }
+                .timer_clock {
+                }
+            }
+            .go {
+                font-weight: 600;
+                font-size: 36px;
+                width: calc(60% - 16px);
+            }
+        }
+        .dictionary_title {
+            width: fit-content;
+            font-weight: 500;
+            margin-top: 1em;
+            padding-bottom: 0.05em;
+            border-bottom: 1.5px solid $base-color;
+        }
+        .dictionary_wrapper {
+            mix-blend-mode: normal;
+            backdrop-filter: blur(4px);
+
+            background: linear-gradient(
+                180deg,
+                rgba(104, 152, 175, 0.5) 0%,
+                rgba(87, 118, 128, 0.5) 0.01%,
+                rgba(255, 255, 255, 0.5) 100%
+            );
+            backdrop-filter: blur(5px);
+            /* Note: backdrop-filter has minimal browser support */
+
+            border-radius: 13px;
+
+            .dictionary_groups {
+                .dictionary_group {
+                    .dictionary_group_title {
+                    }
+                    .dictionary_group_subgroup {
+                        .dictionary_group_subgroup_item {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
